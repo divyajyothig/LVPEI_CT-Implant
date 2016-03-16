@@ -25,8 +25,9 @@ for i = 1 : length(imgPath)
     end 
     If = imrotate(I_front, 180);
     Is = imrotate(I_side,90);
+    m = idx(i);
     subplot(1,3,1)
-    imshow(im{i}{1},[])
+    imshow(im{m}{1},[])
     subplot(1,3,2)
     imshow(If,[]);
     subplot(1,3,3)
